@@ -1,0 +1,197 @@
+/* GENERAL SETTINGS */
+
+* {
+    font-family: "FiraCode Nerd", "JetbrainsMono Nerd", "Hack Nerd", sans-serif;
+    border: none;
+}
+
+window#waybar {
+    background: #b4befe;
+    border: 0px solid #EDE5F9;
+    border-radius: 100px;
+    opacity: 1;
+    color: #000;
+}
+
+/* WORKSPACES */
+#workspaces {
+    background-color: transparent;
+    font-size: 14px;
+    margin: 4px 0px;
+    padding: 0 10px;
+}
+
+#workspaces button {
+    color: #000;
+    border-radius: 100px;
+    padding: 2px 6px;
+    margin: 4px 2px;
+    transition: all 0.25s ease-in-out;
+}
+
+#workspaces button.active {
+    color: #fff;
+    background-color: #9fa8f7;
+}
+
+#workspaces button:hover {
+    background-color: #f5bde6;
+    opacity: 0.4;
+}
+
+/* TOOLTIPS */
+tooltip {
+    border: 1px solid #2E1A47;
+    background-color: #fff;
+    opacity: 1;
+}
+
+tooltip label {
+    color: #000;
+}
+
+/* WINDOW */
+#window {
+    background: transparent;
+    color: #000;
+    margin: 4px 0px;
+    margin-left: 5px;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+/* TASKBAR */
+#taskbar {
+    background: #9fa8f7;
+    margin: 5px 5px;
+    padding: 0 12px;
+    border-radius: 100px;
+}
+
+#taskbar button {
+    margin: 4px 0px;
+    border-radius: 8px;
+    padding: 2px 5px;
+}
+
+#taskbar.empty {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#taskbar button:hover {
+    background: #f5bde6; 
+}
+
+
+
+
+#clock {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 100;
+    font-size: 14px;
+    color: #8c8fd4;
+    background-color: transparent;
+    padding: 2px 4px;
+}
+
+/* QUICK LINKS */
+#custom-wallpaper, 
+#custom-hyprpicker, 
+#custom-nightlight {
+    background-color: transparent;
+    font-size: 18px;
+    margin: 4px 0px;
+    padding: 0 10px;
+}
+
+/* APP MENU */
+#custom-appmenu {
+    background: transparent;
+    margin: 4px 0px;
+    padding: 0 14px;
+}
+
+/* HARDWARE GROUP */
+#disk,#memory,#cpu {
+    background: transparent;
+    margin: 4px 0px;
+    color: #000;
+}
+
+#cpu { padding-left: 5px; }
+#disk { padding-right: 5px; }
+
+
+#custom-media {
+    color: #000;
+    background-color: transparent;
+    margin: 4px 0px;
+    padding: 0 10px;
+}
+
+/* NETWORK */
+#network {
+    background-color: transparent;
+    font-size: 14px;
+    margin: 4px 0px;
+    padding: 0 20px;
+}
+
+#network.ethernet,
+#network.wifi {
+    background-color: transparent;
+}
+
+/* SOUND */
+#pulseaudio {
+    background-color: #9fa8f7;
+    font-size: 14px;
+    margin: 5px 5px;
+    padding: 0 20px;
+    border-radius: 40px;
+}
+
+#pulseaudio.muted {
+    background-color: transparent;
+    color: #ff0000;
+}
+
+/* SYS TRAY */
+#tray {
+    background-color: transparent;
+    margin: 4px 0px;
+    padding: 0px 10px;
+}
+
+#tray > .passive { -gtk-icon-effect: dim; }
+#tray > .needs-attention { -gtk-icon-effect: highlight; }
+
+#tray menu {
+    background-color: #fff;
+    color: #000;
+}
+
+#tray menu label { color: #000 ; }
+#tray * :hover { color: #000; }
+
+/* NOTIFS */
+#custom-sidebar {
+    background: transparent;
+    color: #000;
+    font-size: 18px;
+    margin: 4px 0px;
+    margin-right: 5px;
+    padding: 0 20px;
+}
+
+/* CLOCK */
+#clock {
+    background-color: transparent;
+    margin: 4px 0px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+}

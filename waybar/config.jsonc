@@ -1,0 +1,99 @@
+{
+  "layer": "bottom",
+  "margin-top": 8,
+  "margin-bottom": 0,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 0,
+  "height": 0,
+
+  "modules-left": [
+      "wlr/taskbar"
+  ],
+
+  "modules-center": [
+      "hyprland/workspaces",
+      "clock"
+  ],
+
+  "modules-right": [	
+      "pulseaudio",
+      "tray"
+  ],
+
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": true,
+    "all-outputs": false,
+    "format": "{}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 3
+    }
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}",
+    "sort-by-app-id": false,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "all-outputs": true,
+    "ignore-list": ["alacritty", "kitty", "foot"]
+  },
+
+  "hyprland/window": {
+    "max-length": 50,
+    "separate-outputs": false,
+    "rewrite": {
+      "": "  Hyprland",
+      "~": "   Terminal",
+      "zsh": "   Terminal",
+      "class<kitty>": "   Terminal",
+      "VLC media player": "󰕼   VLC Media Player",
+      "(.*) - VLC media player": "󰕼   VLC | $1",
+      "(.*) - mpv": "   MPV | $1",
+      "Authenticate": "󰻌   Authenticate",
+      "• Discord(.*)": "Discord$1",
+      "(.*)Discord(.*)": "   $1Discord$2"
+    }
+  },
+
+
+ 
+  "pulseaudio": {
+    "states": {
+      "normal": 100,
+      "warning": 150,
+      "danger": 250
+    },
+    "scroll-step": 1,
+    "format": "{volume}%",
+    "format-muted": "  Muted",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "", ""]
+    }
+  },
+
+
+  },
+
+  "clock": {
+    "format": "{:%I:%M}",
+    "format-alt": "{:%d-%m-%Y}",
+    "tooltip": true
+  }
+}
